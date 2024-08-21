@@ -26,4 +26,19 @@ app.get('/books', (req, res) => {
     ]);
 });
 
+
+app.get('/authors', (req, res) => {
+    res.json([
+        {
+            name: 'Warren Buffet'
+        },
+        {
+            name: 'Martin Kleppmann'
+        },
+        {
+            name: 'Elif Shafak'
+        }
+    ]);
+});
+
 module.exports = app;

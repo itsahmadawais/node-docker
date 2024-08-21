@@ -1,5 +1,8 @@
 FROM node:17-alpine
 
+# Install Nodemon
+RUN npm install -g nodemon
+
 # Specify the Working Directory
 WORKDIR /app
 
@@ -16,4 +19,4 @@ COPY . .
 EXPOSE 4000
 
 # Command to start the app
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
